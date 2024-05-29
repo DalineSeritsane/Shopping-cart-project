@@ -5,35 +5,133 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nike Sneaker World</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
-<body class="">
+<body>
 
     <script src="main.js"></script>
 
     <div class="container">
-        <header>
-            <h1>Your Shopping Cart</h1>
-            <div class="shopping">
-                <img src="img.jpg">
-                <span class="quantity">0</span>
+        <div class="menu">
+            <div class="logo">
+
             </div>
-        </header>
-
-        <div class="list">
-              </div>
-
         </div>
-        <div class="card">
-            <h1>Card</h1>
-            <ul class="listCard"></ul>
+
+        <ul>
+            <li class="active"><i class="fa-soild fa-house-user"></i>Home</li>
+            <li><i class="fa-regular fa-user"></i>User</li>
             
-            <div class="checkOut">
-                <div class="total">0</div>
-                <div class="closeShopping">Close</div>
+        </ul>
+        <ul>
+            <li><i class="fa-brands fa-titok"></i>Tiktok</li>
+            <li><i class="fa-brands fa-facebook"></i>Facebook</li>
+            <li><i class="fa-brands fa-instagram"></i>Instagram</li>
+        </ul>
+        </div>
+        <div class="center">
+            <div class="search">
+                <div class="form">
+                    <input type="text" placeholder="Search">
+                    <button>Search</button>
+
             </div>
+
         </div>
 
+        <h2>PRODUCTS</h2>
+        <div class="list">
+            <div class="item" data-key="1">
+            <div class="img">
+                <img src="img2.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike Air Force 1</div>
+                <div class="price">R2,999</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(1)">Remove</button>
+            </div>
     </div>
+         
+            <div class="item" data-key="2">
+            <div class="img">
+                <img src="img3.png" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike Dunk High Retro</div>
+                <div class="price">R3,399</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(2)">Remove</button>
+            </div>
+    
+        </div>
+
+            <div class="item" data-key="3">
+            <div class="img">
+                <img src="img4.webp" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike Air force 1 Trainer</div>
+                <div class="price">R4,999</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(3)">Remove</i></button>
+            </div>
+
+        </div>
+        <div class="item" data-key="4">
+            <div class="img">
+                <img src="img5.webp" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike high ankle sneakers</div>
+                <div class="price">R1,799</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(4)">Remove</i></button>
+            </div>
+
+        </div>
+        <div class="item" data-key="5">
+            <div class="img">
+                <img src="img7.webp" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike Air Dunk</div>
+                <div class="price">R2,999</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(5)">Remove</i></button>
+            </div>
+
+        </div>
+        <div class="item" data-key="6">
+            <div class="img">
+                <img src="img1.jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="title">Nike Jordan Travis Scott</div>
+                <div class="price">R6,999</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add">Add to Cart</button>
+                <button class="remove" onclick="Remove(6)">Remove</i></button>
+            </div>
+
+        </div>
+</div>
+</div>
+
+<div class="cart">
+    <div class="name">CART</div>
+    <div class="listCart"></div>
+</div>
+
+
+        
+            
+        
     
 </body>
 </html>

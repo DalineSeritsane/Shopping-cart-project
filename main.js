@@ -21,7 +21,7 @@ let products = [
  },
 
      {id: 2, name: 'Nike high ankle', 
-    image: 'img5.png'
+    image: 'img5.webp'
     price: 2999
  },
 
@@ -31,7 +31,7 @@ let products = [
  },
 
  {id: 4, name: 'Nike Air Force 1 Trainer', 
-    image: 'img4.png'
+    image: 'img7.webp'
     price: 4999
  },
 
