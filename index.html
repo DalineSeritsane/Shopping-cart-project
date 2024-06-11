@@ -26,49 +26,42 @@
             <a href="#">Products</a>
             <a href="#">Contact Us</a>
         </div>
-        <div 
+        <div class="hero-content">
+            <h1>Choose the Perfect Nikey Sneaker of your Style</h1>
+            <a href="#shop" class="button">Shop Now</a>
+        </div>
 
    </header>
 
+
    <!--Item cards-->
    
-   <br>
-
-        <h2>PRODUCTS</h2>
+   <br><br>
+   <main>
+    <section id="items-section">
+        <h2 class="h2">PRODUCTS</h2>
         <div class="itemContainer">
-        <div class="card">
-            <article class="cardImg">
-                <img src="img2.png" alt="">
-            
-        </article>
-            <div class="content">
-                <div class="title">Nike Air Force 1</div>
-                <div class="price">R2,999</div>
-                <input type="number" class="count" min="1" value="1">
-                <button class="add">Add to Cart</button>
-                <button class="remove" onclick="Remove(1)">Remove</button>
-            </div>
-        </div>
-    </div>
-        </div>
-         
-            <div class="item" data-key="2">
-            <div class="img">
-                <img src="img3.png" alt="">
-            </div>
-            <div class="content">
-                <div class="title">Nike Dunk High Retro</div>
-                <div class="price">R3,399</div>
-                <input type="number" class="count" min="1" value="1">
-                <button class="add">Add to Cart</button>
-                <button class="remove" onclick="Remove(2)">Remove</button>
+            <div class="item">
+               <img class="img" src="images.jpg" alt="Nike Air Force1">
+               <h3>Nike Air Force 1 </h3>
+               <div class="price">R2,999</div>
+               <input type="number" class="count" min="1" value="1">
+               <button class="add-to-cart" data-name="Nike Air Force1" data-price="2999">Add to Cart</button>
+               <button class="remove" onclick="Remove(1)">Remove</i></button>
             </div>
     
-        </div>
-
-            <div class="item" data-key="3">
+            <div class="item">
+                <img class="img" src="img3.png" alt="Nike Dunk Retro">
+                <h3>Nike Dunk High Retro</h3>
+                <div class="price">R3,399</div>
+                <input type="number" class="count" min="1" value="1">
+                <button class="add-to-cart" data-name="Nike Dunk Retro" data-price="3399">Add to Cart</button>
+                <button class="remove" onclick="Remove(2)">Remove</i></button>
+            </div>
+    
+            <div class="item">
             <div class="img">
-                <img src="img4.webp" alt="">
+                <img class="img "src="img4.webp" alt=" Nike Air force 1 Trainer">
             </div>
             <div class="content">
                 <div class="title">Nike Air force 1 Trainer</div>
@@ -98,7 +91,7 @@
             </div>
             <div class="content">
                 <div class="title">Nike Air Dunk</div>
-                <div class="price">R2,999</div>
+                <div class="price">R3,800</div>
                 <input type="number" class="count" min="1" value="1">
                 <button class="add">Add to Cart</button>
                 <button class="remove" onclick="Remove(5)">Remove</i></button>
@@ -125,7 +118,8 @@
     <div class="name">CART</div>
     <div class="listCart"></div>
 </div>
-
+    </section>
+   </main>
 <script src="main.js"></script>
         
             
