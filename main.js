@@ -5,13 +5,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartCount = document.querySelector('.cart-count');
     const purchaseBtn = document.querySelector('.purchase-btn');
 
-    //function of cart to work
+    //function to update cart display
     const updateCartDisplay = () => {
         cartItemsContainer.innerHTML = '';
         let total = 0;
         let itemCount = 0;
-
-        cart.forEach(item, index) => {
+    
+        cart.forEach((item, index) => {
             total += item.price * item.quantity;
             itemCount += item.quantity;
 
@@ -27,36 +27,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
              `;
              cartItemsContainer.appendChild(cartItem);
-        };
+        });
 
         cartTotal.textContent = total.toFixed(2);
         cartCount.textContent = itemCount;
+    };
     
 
     //function to add items to cart
     const addItemToCart = (name, price) => {
-        const existingitem = cart.find(item => item.name === name);
-        if (existingitem) {
-            existingitem.quantity++;
+        const existingItem = cart.find(item => item.name === name);
+        if (existingItem) {
+            existingItem.quantity++;
             } else {
                 cart.push({ name, price, quantity: 1 });
                 }
                 updateCartDisplay();
 };
 
-//function to remove items
+//function to remove items from cart
    const removeFromCart = (index) => {
     cart.splice(index, 1);
     updateCartDisplay();
    };
 
-   //increasing item quantity
+   // function increasing item quantity
    const increaseItemQty = (index) => {
     cart[index].quantity++;
     updateCartDisplay();
     };
 
-    //decrease item quantity
+    // function decrease item quantity
     const decreaseItemQty = (index) => {
         if (cart[index].quantity > 1) {
             cart[index].quantity--;
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
 
-    //event listeners for removing items
+    //event listeners for cart items container
     cartItemsContainer.addEventListener('click', (e) => {
         if (e.target.classList.contains('remove-from-cart')) {
             const index = parseInt(e.target.getAttribute('data-index'));
